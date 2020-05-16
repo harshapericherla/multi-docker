@@ -18,6 +18,7 @@ after_success:
    - docker push pericherla/multi-server
    - docker push pericherla/multi-worker
 deploy:
+   edge: true
    provider: elasticbeanstalk
    region: us-east-2
    app: multi-docker
